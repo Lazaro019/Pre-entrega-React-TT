@@ -1,24 +1,22 @@
+import { Helmet } from "react-helmet"
 import Footer from "../components/Footer"
 import Header from "../components/Header"
 import Main from "../components/Main"
-import Nav from "../components/Nav"
-import ProductosContainer from "../components/ProductosContainer"
 
+<Helmet>
+  <title>Inicio | Juegos x Diversion</title>
+  <meta name="description" content="Inicio de Juegos x Diversion, donde encontraras los mejores juegos" />
+  <meta name="robots" content="index, follow" />
+</Helmet>
 
-
-function Home({ functionCarrito }) {
+function Home() {
+    
 
     return(
         <div>
-            <div>    
-                <Header/>
-                <Main/>
-            </div>
-            <section>
-                <ProductosContainer functionCarrito={functionCarrito}/>
-            </section>
-                <Footer/>
-
+            <Header/>
+            <Main/>
+            <Footer/>
         </div>
     )
 }

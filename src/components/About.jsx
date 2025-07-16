@@ -1,3 +1,11 @@
+import { Helmet } from "react-helmet";
+
+<Helmet>
+  <title>About | Juegox x Diversion</title>
+  <meta name="description" content="Seccion sobre nosotros" />
+  <meta name="robots" content="index, follow" />
+</Helmet>
+
 function About() {
     
     return (

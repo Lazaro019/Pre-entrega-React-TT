@@ -2,8 +2,9 @@ import { useState } from "react";
 import "../styles/Productos.css"
 import Swal from 'sweetalert2';
 import"../styles/Card.css"
+import { FaMinus, FaPlus } from "react-icons/fa6";
 
-function Card({producto, funcionCarrito}){
+function Card({producto, functionCarrito}){
     const [cantidad, setCantidad] = useState(1);
     
     function agregarAlCarrito() {
@@ -16,7 +17,7 @@ function Card({producto, funcionCarrito}){
             timer: 1500,
             toast: true
         });
-         funcionCarrito({ ...producto, cantidad }); // Pasamos también la cantidad   
+         functionCarrito({ ...producto, cantidad });  
     }
 
     function sumarContador() {
@@ -36,11 +37,11 @@ function Card({producto, funcionCarrito}){
             <p style={{color:"black"}}>{producto.descripcion}</p>
             <h3 style={{color:"black"}}>{producto.Precio} $</h3>
             <div>
-                <button onClick={restarContador}>-</button>
+                <button onClick={restarContador} aria-label="Restar producto"><FaMinus/></button>
                 <span style={{ margin: "0 10px", color:"black" }}>{cantidad}</span>
-                <button onClick={sumarContador}>+</button>
+                <button onClick={sumarContador} aria-label="Sumar producto"><FaPlus/></button>
             </div>
-            <button onClick={agregarAlCarrito}>Agregar al carrito</button>
+            <button onClick={agregarAlCarrito} aria-label="Agregar producto al carrito">Agregar al carrito</button>
         </div>
     )
 }

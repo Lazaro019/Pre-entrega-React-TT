@@ -1,0 +1,82 @@
+.admin-contenedor {
+  padding: 2rem;
+}
+
+.producto-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-evenly;
+}
+
+.producto-card {
+  background-color: #55dee0af;
+  border: 2px solid #015875;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+}
+
+.producto-form {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  background-color: #015875;
+  color: white;
+}
+
+.producto-form select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  background-color: rgba(240, 248, 255, 0.911);
+  color: black;
+}
+
+.producto-form input, .producto-form button{
+  padding: 0.25rem;
+  margin-bottom: 0.5rem;
+  background-color: rgba(240, 248, 255, 0.911);
+  color: black;
+}
+
+.producto-btns {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.modal-confirm {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.modal-content button{
+    justify-content:space-between;
+    gap: 0.5rem;
+    margin: 0.5rem;
+}
+
+#botonEliminar{
+  background-color: rgb(255, 1, 1);
+  color: white;
+}

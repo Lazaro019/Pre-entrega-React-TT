@@ -1,0 +1,14 @@
+.imagen-conteiner{
+    display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #55dee0af;
+  border: solid #015875;
+  width: 75%;
+  height: auto;
+  padding: 2rem;
+  border-radius: 20px;
+  margin: 2rem auto; 
+  box-sizing: border-box;
+}  

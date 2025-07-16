@@ -1,2 +1,10 @@
-Esta pagina esta basada en React y html, creando una tienda e-commerce
-para vender videojuegos que cuenta con un home, un carrito y pagina de contacto
+# Juegos x Diversion
+
+Tienda virtual que simula compra de videojuegos desarrollada en React con funciones de CRUD y carrito de compras, administra productos usando MockAPI.
+Cuenta con un Home, seccion de productos dividido en categorias, un carrito, pagina de contacto y administracion para agregar, editar o eliminar productos 
+
+# Tecnologías
+- React
+- React Router
+- CSS
+- MockAPI
